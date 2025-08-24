@@ -4,6 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 p {
@@ -20,7 +21,7 @@ p {
     position: relative;
     display: flex;
     position: relative;
-    margin-top: 10vw;
+    margin-top: 320h;
 
 }
 
@@ -71,9 +72,10 @@ p {
 }
 
 .card.clicked {
-    transform: rotate(-5deg);
+    transform: translateX(25%) rotate(-5deg);
     transition: 2s;
-}
+  }
+  
 
 .card.clicked .outside {
     transform: rotateY(-180deg);
