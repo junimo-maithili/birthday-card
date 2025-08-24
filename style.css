@@ -74,6 +74,10 @@ img {
     
 }
 
+.front p {
+    font-size: clamp(1.5rem, 3vw, 4rem);
+}
+
 .front, .back {
     height: 100%;
     position: absolute;
