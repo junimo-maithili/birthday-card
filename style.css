@@ -12,7 +12,7 @@ body {
 }
 
 p {
-    font-size: 3vh;
+    font-size: 1.5rem;
 }
 
 img {
@@ -31,7 +31,7 @@ img {
   }
 
 .genuine-message {
-    padding: 1vh;
+    padding: 0.5rem;
 }
 
 .card {
@@ -102,7 +102,7 @@ img {
 }
 
 .card.clicked {
-    transform: translateX(30%) rotate(-5deg);
+    transform: translateX(50%) rotate(-5deg);
 }
 
 .card.clicked .outside {
