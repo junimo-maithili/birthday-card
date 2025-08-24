@@ -33,13 +33,12 @@ img {
 
 .genuine-message {
     padding: 0.5rem;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
 }
 
 .card {
     width: 90vw;
     max-width: 40em;
-    height: auto;
     aspect-ratio: 2 / 1;
     margin: auto;    
     -webkit-perspective: 1200px;
@@ -48,7 +47,7 @@ img {
     display: flex;
     position: relative;
     transition: transform 1.5s ease-in-out;
-    font-size: clamp(1rem, 2.2vw, 1.4rem);
+    font-size: clamp(0.5rem, 2.2vw, 1.4rem);
 }
 
 .inside {
@@ -57,7 +56,7 @@ img {
     width: 50%;
     background-color: #ed9d72;
     color: white;
-    font-size: clamp(1rem, 2.2vw, 1.4rem);
+    font-size: clamp(0.5rem, 2.2vw, 1.4rem);
 
 }
 
@@ -76,7 +75,7 @@ img {
 }
 
 .front p {
-    font-size: clamp(1rem, 2.2vw, 1.4rem);
+    font-size: clamp(0.5rem, 2.2vw, 1.4rem);
 }
 
 .front, .back {
@@ -144,3 +143,16 @@ img {
         font-size: 1.5rem;
     }
 }
+
+.card {
+    aspect-ratio: 2 / 1;
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      aspect-ratio: auto;
+      height: auto;
+      min-height: 300px;
+    }
+  }
+  
