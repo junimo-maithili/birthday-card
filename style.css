@@ -8,6 +8,7 @@ body {
     height: 100vh;
     font-family: "Cherry Bomb One", system-ui;
     color: #6b7fc2;
+    
 
 }
 
@@ -32,6 +33,7 @@ img {
 
 .genuine-message {
     padding: 0.5rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .card {
@@ -44,7 +46,8 @@ img {
     position: relative;
     display: flex;
     position: relative;
-
+    transition: transform 1.5s ease-in-out;
+    font-size: clamp(1rem, 2.2vw, 1.4rem);
 }
 
 .inside {
@@ -53,6 +56,8 @@ img {
     width: 50%;
     background-color: #ed9d72;
     color: white;
+    font-size: clamp(1rem, 2.2vw, 1.4rem);
+
 }
 
 .outside {
@@ -91,9 +96,6 @@ img {
     transform: rotateY(0deg);
 }
 
-.card {
-    transition: transform 1.5s ease-in-out;
-}
 
 .outside {
     transition: transform 1.5s ease-in-out;
@@ -107,4 +109,15 @@ img {
 
 .card.clicked .outside {
     transform: rotateY(-180deg);
+}
+
+.inside,
+.front,
+.back {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
 }
