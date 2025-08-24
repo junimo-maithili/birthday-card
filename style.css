@@ -8,7 +8,16 @@ body {
 }
 
 p {
-    color: pink;
+    color: black;
+}
+
+img {
+    width: 30vh;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    width: 50%;
 }
 
 .card {
@@ -29,7 +38,7 @@ p {
     position: absolute;
     height: 100%;
     width: 50%;
-    background-color: lightblue;
+    background-color: #ed9d72;
 }
 
 .outside {
@@ -46,6 +55,7 @@ p {
     
 }
 .front, .back {
+    justify-content: center;
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
@@ -59,10 +69,7 @@ p {
 
 .back{
     transform: rotateY(180deg);
-}
-
-.outside, .front, .back {
-    border: 1px solid red;
+    align-items: center;
 }
 
 
