@@ -1,13 +1,74 @@
 body {
     background-color: darksalmon;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-h1 {
-    color: blue;
+p {
+    color: pink;
 }
 
 .card {
-    background-color:white;
-    width: 700px;
-    height: 300px;
+    width: 640px;
+    height: 400px;    
+    margin: auto;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    position: relative;
+    display: flex;
+
+}
+
+.inside {
+    height: 50%;
+    width: 50%;
+}
+
+.outside {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    background-color: lightblue;
+    transition: 2s;
+
+    
+}
+.front, .back {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    left: 50.1%;
+
+    
+}
+
+.front {
+    background-color: white;
+    transform: rotateX(0deg);
+}
+
+.back{
+    height: 100%;
+    transform: rotateX(0deg);
+    transform: rotateY(180deg);
+    background-color: white;
+}
+
+.outside, .front, .back {
+    border: 1px solid red;
+}
+
+.card:hover .outside {
+    transform: rotate(-5deg);
+    transform: rotateY(-180deg);
+
 }
