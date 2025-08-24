@@ -82,7 +82,7 @@ p {
 }
 
 .card.clicked {
-    transform: translateX(20%) rotate(-5deg);
+    transform: translateX(50%) rotate(-5deg);
 }
 
 .card.clicked .outside {
