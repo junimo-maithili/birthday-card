@@ -12,7 +12,7 @@ p {
 
 .card {
     width: 40em;
-    height: 23em;    
+    aspect-ratio: 2 / 1;
     margin: auto;
     -webkit-perspective: 1200px;
     perspective: 1200px;
@@ -26,7 +26,7 @@ p {
     position: absolute;
     height: 100%;
     width: 50%;
-    background-color: blue;
+    background-color: lightblue;
 }
 
 .outside {
