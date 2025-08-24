@@ -11,14 +11,16 @@ p {
 }
 
 .card {
-    width: 40em;
+    width: 90vw;
+    max-width: 40em;
     aspect-ratio: 2 / 1;
-    margin: auto;
+    margin: auto;    
     -webkit-perspective: 1200px;
     perspective: 1200px;
     position: relative;
     display: flex;
     position: relative;
+    margin-top: 10vw;
 
 }
 
@@ -68,11 +70,11 @@ p {
     transform: rotateY(0deg);
 }
 
-.card:active {
+.card.clicked {
     transform: rotate(-5deg);
     transition: 2s;
 }
 
-.card:active .outside {
+.card.clicked .outside {
     transform: rotateY(-180deg);
 }
