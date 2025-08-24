@@ -39,6 +39,7 @@ img {
 .card {
     width: 90vw;
     max-width: 40em;
+    height: auto;
     aspect-ratio: 2 / 1;
     margin: auto;    
     -webkit-perspective: 1200px;
