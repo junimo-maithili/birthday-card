@@ -68,11 +68,11 @@ p {
     transform: rotateY(0deg);
 }
 
-.card:hover {
+.card:active {
     transform: rotate(-5deg);
     transition: 2s;
 }
 
-.card:hover .outside {
+.card:active .outside {
     transform: rotateY(-180deg);
 }
